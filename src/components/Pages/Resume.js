@@ -1,9 +1,20 @@
 import React from "react";
+import resumeImage from "../../assets/images/resumeImage.png"
 
 export default function Contact() {
+    const downloadFile = () => {
+        //Need to add logic to download on click.
+    }
+    
     return (
         <div>
-            <h1>This is where a resume download link will go and where an image of my resume will live.</h1>
+            <h1>Resume</h1>
+            
+            <img src={resumeImage} alt="Resume" />
+
+            <div>
+                <button id="downloadBtn" onClick={downloadFile}>Download a copy</button>
+            </div>
         </div>
     )
 }
