@@ -2,6 +2,12 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <h1>This is where the footer will live.</h1>
+        <div>
+            <ul>
+                <li><a href="https://github.com/rdahltorp">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/reeddahltorp/">LinkedIn</a></li>
+                <li><a href="https://stackoverflow.com/users/21008616/reed-dahltorp">StackOverflow</a></li>
+            </ul>
+        </div>
     )
 }
