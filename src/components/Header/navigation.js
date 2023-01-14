@@ -35,7 +35,7 @@ export default function Nav({ currentPage, handlePageChange }) {
                     </li>
                     <li className="Contact">
                         <a 
-                            href="#AboutMe"
+                            href="#Contact"
                             onClick={() => handlePageChange('Contact')}
                             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link' }
                         >
