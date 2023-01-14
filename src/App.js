@@ -1,19 +1,16 @@
+import React from "react";
+import Navigation from "./components/Header/navigation"
+import PageHandler from "./components/PageHandler"
+import Footer from "./components/Footer/footer"
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello there - Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <main>
+        <PageHandler />
+      </main>
+      <Footer />
     </div>
   );
 }
