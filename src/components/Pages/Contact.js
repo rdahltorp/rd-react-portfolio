@@ -24,7 +24,7 @@ export default function Contact() {
         }
     };
     
-    //Trying to make it so a message populates if a field is left empty after you click out of it. I have it set to onClick right now but a couple issues with that: 1) the message automatically pops before field is clicked out of; 2) the error message remins until you click in the field when it has something in it. Need help getting this to work.  
+    //Trying to make it so a message populates if a field is left empty after you click out of it. I have it set for onMouseLeave, but wondering if there is a better way?   
     const handleMissingCells = (e) => {
         const { target } = e;
         const inputType = target.name;
@@ -88,7 +88,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     type='text'
                     placeholder="Name"
-                    onClick={handleMissingCells}
+                    onMouseLeave={handleMissingCells}
                 />
                 {nameMissingError && (
                     <div>
@@ -101,7 +101,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     type='email'
                     placeholder="Email"
-                    onClick={handleMissingCells}
+                    onMouseLeave={handleMissingCells}
                 />
                 {emailMissingError && (
                     <div>
@@ -113,7 +113,7 @@ export default function Contact() {
                     name='message'
                     onChange={handleInputChange}
                     placeholder="What would you like to say?"
-                    onClick={handleMissingCells}
+                    onMouseLeave={handleMissingCells}
                 />
                 {messageMissingError && (
                     <div>
