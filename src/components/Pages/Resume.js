@@ -4,6 +4,15 @@ import resumeImage from "../../assets/images/resumeImage.png"
 export default function Contact() {
     const downloadFile = () => {
         //Need to add logic to download on click.
+        fetch('reed-dahltorp-resume.pdf').then(response => {
+            response.blob().then(blob => {
+                const fileURL = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'reed-dahltorp-resume.pdf';
+                alink.click();
+            })
+        })
     }
     
     return (
