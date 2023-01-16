@@ -93,14 +93,12 @@ textarea {
     box-shadow: 10px 5px 15px #5454;
 }
 
-.project {
-    width: 60%;
-    height: 150px;
-    margin: 30px;
+.projectCentering {
+    display: flex;
+    justify-content: center;
 }
 
 .techBlogImg {
     background-image: url("./assets/images/projectImgs/techblog-screenshot.png");
     background-size: cover;
-
 }

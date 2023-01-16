@@ -12,6 +12,7 @@ import WorkSchedImg from '../../assets/images/projectImgs/day-scheduler-screensh
 import VeggieBookImg from '../../assets/images/projectImgs/veggiebook-screenshot.png'
 import NPSImg from '../../assets/images/projectImgs/parksearch-screenshot.png'
 import { width } from '@mui/system';
+import { Grid } from '@mui/material';
 
 const projects =[
     {
@@ -69,30 +70,34 @@ export default function Portfolio() {
   return (
      <div className='mainContainer'>
          <h1>Previous Work</h1>
+         <Grid container spacing={2} direction="row" justifyContent="space-evenly" alignItems="center">
         {projects.map((project) => (
-            <Card sx={{ maxWidth: 345, margin: '10px' }}>
-                <CardMedia 
-                    key={project.name}
-                    sx={{ 
-                        height: 140, 
-                    }}
-                    image={project.image}
-                    title={project.title}
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        {project.name}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Languages Used: {project.langs}
-                    </Typography>
-                </CardContent>
-                <CardActions>
-                    <Button size="small" href={project.repoLink} target="_blank" rel="noreferrer">Repo</Button>
-                    <Button size="small" href={project.liveApp} target="_blank" rel="noreferrer">Live App</Button>
-                </CardActions>
-            </Card>
+            <Grid item xs={12} md={5} className="projectCentering">
+                <Card sx={{ width: '40vh', margin: '10px'}}>
+                    <CardMedia 
+                        key={project.name}
+                        sx={{ 
+                            height: 140, 
+                        }}
+                        image={project.image}
+                        title={project.title}
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            {project.name}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            Languages Used: {project.langs}
+                        </Typography>
+                    </CardContent>
+                    <CardActions>
+                        <Button size="small" href={project.repoLink} target="_blank" rel="noreferrer">Repo</Button>
+                        <Button size="small" href={project.liveApp} target="_blank" rel="noreferrer">Live App</Button>
+                    </CardActions>
+                </Card>
+            </Grid>
         ))}
+        </Grid>
     </div>
     );
 }
