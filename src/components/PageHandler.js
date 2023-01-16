@@ -29,7 +29,7 @@ export default function PageHandler() {
     const handlePageChange = (page) => setCurrentPage(page)
     
     return (
-        <div>
+        <div className="flexWrapper">
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
             <main>
                 {renderPage()}
