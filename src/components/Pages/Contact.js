@@ -67,7 +67,7 @@ export default function Contact() {
             return;
         }
 
-        alert(`Thank you for your message ${name}! At this time the contact form is under construction. To reach Reed please reachout via LinkedIn. Apologies for the inconvenience.`)
+        alert(`Thank you for your message, ${name}! At this time the contact form is under construction. To reach Reed please reachout via LinkedIn. Apologies for the inconvenience.`)
 
         setName('')
         setEmail('')
@@ -78,10 +78,13 @@ export default function Contact() {
     //alert('Thank you for visiting the Contact page. We apologize but this page is currently under construction. If you would like to contact Reed please reachout via LinkedIn. Apologies for the inconvenience.')
 
     return (
-        <div>
-            <h1>Contact Me</h1>
-            <p>Want to work together? Curious about one of my projects or background? Want to talk Dungeons and Dragons or Star Wars? Fill out the form below and I will get back to you as soon as I can!</p>
-            <form>
+        <div className="mainContainer">
+            <div className="profileDesc">
+                <h1 className="aboutMeTitle">Contact Me</h1>
+                <p>Want to work together? Curious about one of my projects or background? Want to talk Dungeons and Dragons or Star Wars?</p>
+                <p>Fill out the form below and I will get back to you as soon as I can!</p>
+            </div>
+            <form className="formContainer">
                 <input 
                     value={name}
                     name='name'
@@ -92,7 +95,7 @@ export default function Contact() {
                 />
                 {nameMissingError && (
                     <div>
-                        <p className="error-text">{nameMissingError}</p>
+                        <p className="errorMsg">{nameMissingError}</p>
                     </div>
                 )}
                 <input 
@@ -105,7 +108,7 @@ export default function Contact() {
                 />
                 {emailMissingError && (
                     <div>
-                        <p className="error-text">{emailMissingError}</p>
+                        <p className="errorMsg">{emailMissingError}</p>
                     </div>
                 )}
                 <textarea 
@@ -117,14 +120,14 @@ export default function Contact() {
                 />
                 {messageMissingError && (
                     <div>
-                        <p className="error-text">{messageMissingError}</p>
+                        <p className="errorMsg">{messageMissingError}</p>
                     </div>
                 )}
                 <button type="button" onClick={handleFormSubmit}>Submit</button>
             </form>
             {errorMessage && (
                 <div>
-                    <p className="error-text">{errorMessage}</p>
+                    <p className="errorMsg">{errorMessage}</p>
                 </div>
             )}
         </div>
