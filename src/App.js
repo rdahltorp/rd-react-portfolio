@@ -1,5 +1,6 @@
 import React from "react";
-import PageHandler from "./components/PageHandler"
+import PageHandler from "./components/PageHandler";
+import './App.css';
 
 function App() {
   return (

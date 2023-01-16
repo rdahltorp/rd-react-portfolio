@@ -16,10 +16,10 @@ export default function Contact() {
     }
     
     return (
-        <div>
+        <div className="mainContainer">
             <h1>Resume</h1>
             
-            <img src={resumeImage} alt="Resume" />
+            <img src={resumeImage} alt="Resume" className="resumeImg" />
 
             <div>
                 <button id="downloadBtn" onClick={downloadFile}>Download a copy</button>
