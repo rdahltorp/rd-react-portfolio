@@ -26,7 +26,7 @@ const projects =[
     {
         name: 'Note Taker',
         langs: 'JavaScript, Express, Node',
-        repoLink: 'https://github.com/rdahltorp/work-day-scheduler',
+        repoLink: 'https://github.com/rdahltorp/note-taker-app',
         liveApp: 'https://protected-journey-05055.herokuapp.com/',
         image: NoteTakerImg,
         title: 'Note Taker',
@@ -58,7 +58,7 @@ const projects =[
         name: 'National Park Search',
         langs: 'JavaScript, Materialize',
         repoLink: 'https://github.com/dcavinder/park_search',
-        liveApp: 'https://fast-woodland-06373.herokuapp.com/',
+        liveApp: 'https://dcavinder.github.io/park_search/',
         image: NPSImg,
         title: "National Parks Search",
     },
@@ -102,32 +102,3 @@ export default function Portfolio() {
     );
 }
 
-
-// ------------------------TEST CARD TEMPLATE----------------------------
-
-// export default function MediaCard() {
-//   return (
-//     <div className='mainContainer'>
-//         <h1>Previous Work</h1>
-//         <Card sx={{ maxWidth: 345 }}>
-//             <CardMedia
-//                 sx={{ height: 140 }}
-//                 image={projects[0].image}
-//                 title={projects[0].title}
-//             />
-//             <CardContent>
-//                 <Typography gutterBottom variant="h5" component="div">
-//                 {projects[0].name}
-//                 </Typography>
-//                 <Typography variant="body2" color="text.secondary">
-//                     Languages Used: {projects[0].langs}
-//                 </Typography>
-//             </CardContent>
-//             <CardActions>
-//                 <Button size="small" href={projects[0].repoLink} target="_blank" rel="noreferrer">Repo</Button>
-//                 <Button size="small" href={projects[0].liveApp} target="_blank" rel="noreferrer">Live App</Button>
-//             </CardActions>
-//         </Card>
-//     </div>
-//   );
-// }
