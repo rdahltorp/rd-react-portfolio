@@ -13,20 +13,20 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 
 
-function ResponsiveAppBar({ currentPage, handlePageChange }) {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+function ResponsiveAppBar({ currentPage, handlePageChange, handleCloseNavMenu, handleOpenNavMenu, anchorElNav }) {
+  // const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+  // const handleOpenNavMenu = (event) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
@@ -129,16 +129,16 @@ function ResponsiveAppBar({ currentPage, handlePageChange }) {
           {/* Handles the menu options in desktop */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 <MenuItem onClick={() => handlePageChange('AboutMe')}>
-                  <Typography textAlign="center">About Me</Typography>
+                  <Typography textAlign="center" className={currentPage === 'AboutMe' ? 'navHighlight' : ''}>About Me</Typography>
                 </MenuItem>
                 <MenuItem onClick={() => handlePageChange('Portfolio')}>
-                  <Typography textAlign="center">Portfolio</Typography>
+                  <Typography textAlign="center" className={currentPage === 'Portfolio' ? 'navHighlight' : ''}>Portfolio</Typography>
                 </MenuItem>
                 <MenuItem onClick={() => handlePageChange('Resume')}>
-                  <Typography textAlign="center">Resume</Typography>
+                  <Typography textAlign="center" className={currentPage === 'Resume' ? 'navHighlight' : ''}>Resume</Typography>
                 </MenuItem>
                 <MenuItem onClick={() => handlePageChange('Contact')}>
-                  <Typography textAlign="center">Contact</Typography>
+                  <Typography textAlign="center" className={currentPage === 'Contact' ? 'navHighlight' : ''}>Contact</Typography>
                 </MenuItem>
           </Box>
           <Box sx={{ flexGrow: 0 }}>

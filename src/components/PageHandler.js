@@ -11,6 +11,16 @@ export default function PageHandler() {
     //Sets up the state of the page with the defualt being the "About" page
     const [currentPage, setCurrentPage] = useState('AboutMe');
 
+    const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+    const handleOpenNavMenu = (event) => {
+        setAnchorElNav(event.currentTarget);
+    };
+
+    const handleCloseNavMenu = () => {
+        setAnchorElNav(null);
+    };
+
     const renderPage = () => {
         if (currentPage === 'AboutMe') {
             return <About />
@@ -26,11 +36,14 @@ export default function PageHandler() {
         }
     }
 
-    const handlePageChange = (page) => setCurrentPage(page)
+    const handlePageChange = (page) => {
+        setCurrentPage(page) 
+        handleCloseNavMenu()
+    }
     
     return (
         <div className="flexWrapper">
-            <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Navigation currentPage={currentPage} handlePageChange={handlePageChange} handleCloseNavMenu={handleCloseNavMenu} handleOpenNavMenu={handleOpenNavMenu} anchorElNav={anchorElNav} />
             <main>
                 {renderPage()}
             </main>

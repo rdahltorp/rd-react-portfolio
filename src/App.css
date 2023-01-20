@@ -102,3 +102,8 @@ textarea {
     background-image: url("./assets/images/projectImgs/techblog-screenshot.png");
     background-size: cover;
 }
+
+.navHighlight {
+    border: white 1px solid;
+    padding: 5px;
+}

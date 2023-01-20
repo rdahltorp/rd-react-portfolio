@@ -92,7 +92,11 @@ export default function Portfolio() {
                     </CardContent>
                     <CardActions>
                         <Button size="small" href={project.repoLink} target="_blank" rel="noreferrer">Repo</Button>
-                        <Button size="small" href={project.liveApp} target="_blank" rel="noreferrer">Live App</Button>
+                        {project.liveApp ? (
+                            <Button size="small" href={project.liveApp} target="_blank" rel="noreferrer">Live App</Button>
+                        )
+                        : null
+                        }
                     </CardActions>
                 </Card>
             </Grid>
