@@ -11,10 +11,19 @@ import EmpTrackImg from '../../assets/images/projectImgs/employee-tracker-screen
 import WorkSchedImg from '../../assets/images/projectImgs/day-scheduler-screenshot.png'
 import VeggieBookImg from '../../assets/images/projectImgs/veggiebook-screenshot.png'
 import NPSImg from '../../assets/images/projectImgs/parksearch-screenshot.png'
+import mud from '../../assets/images/projectImgs/multi-user-dungeon.png'
 import { width } from '@mui/system';
 import { Grid } from '@mui/material';
 
 const projects =[
+    {
+        name: 'Multi-User-Dungeon',
+        langs: 'JavaScript, React, CSS, Express, GraphQL',
+        repoLink: 'https://github.com/joshdelmonte/Multi-User-Dungeon',
+        liveApp: 'https://darkerforest.herokuapp.com/',
+        image: mud,
+        title: 'Multi-User-Dungeon',
+    },
     {
         name: 'Tech Blog',
         langs: 'JavaScript, Handlebars, Bootstrap, Express, MySQL',
