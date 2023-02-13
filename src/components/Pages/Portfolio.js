@@ -20,7 +20,7 @@ const projects =[
         name: 'Multi-User-Dungeon',
         langs: 'JavaScript, React, CSS, Express, GraphQL',
         repoLink: 'https://github.com/joshdelmonte/Multi-User-Dungeon',
-        liveApp: 'https://darkerforest.herokuapp.com/',
+        liveApp: 'https://fast-hamlet-37820.herokuapp.com/',
         image: mud,
         title: 'Multi-User-Dungeon',
     },
