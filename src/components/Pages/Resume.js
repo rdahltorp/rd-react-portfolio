@@ -9,7 +9,7 @@ export default function Contact() {
                 const fileURL = window.URL.createObjectURL(blob);
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'reed-dahltorp-resume.pdf';
+                alink.download = 'ReedDahltorp-FullStack-Engineer-Resume.pdf';
                 alink.click();
             })
         })
