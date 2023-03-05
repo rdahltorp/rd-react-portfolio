@@ -63,14 +63,15 @@ const projects =[
         image: VeggieBookImg,
         title: 'VeggieBook',
     },
-    {
-        name: 'National Park Search',
-        langs: 'JavaScript, Materialize',
-        repoLink: 'https://github.com/dcavinder/park_search',
-        liveApp: 'https://dcavinder.github.io/park_search/',
-        image: NPSImg,
-        title: "National Parks Search",
-    },
+    // REMOVING BUT KEEPING INFO.
+    // {
+    //     name: 'National Park Search',
+    //     langs: 'JavaScript, Materialize',
+    //     repoLink: 'https://github.com/dcavinder/park_search',
+    //     liveApp: 'https://dcavinder.github.io/park_search/',
+    //     image: NPSImg,
+    //     title: "National Parks Search",
+    // },
 ]
 
 // ------------------------Map template based on array above----------------------------
