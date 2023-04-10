@@ -24,7 +24,6 @@ export default function Contact() {
         }
     };
     
-    //Trying to make it so a message populates if a field is left empty after you click out of it. I have it set for onMouseLeave, but wondering if there is a better way?   
     const handleMissingCells = (e) => {
         const { target } = e;
         const inputType = target.name;

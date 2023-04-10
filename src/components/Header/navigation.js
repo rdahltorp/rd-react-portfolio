@@ -100,9 +100,10 @@ function ResponsiveAppBar({ currentPage, handlePageChange, handleCloseNavMenu, h
                 <MenuItem onClick={() => handlePageChange('Resume') && handleCloseNavMenu}>
                   <Typography textAlign="center">Resume</Typography>
                 </MenuItem>
-                <MenuItem onClick={() => handlePageChange('Contact') && handleCloseNavMenu}>
+                {/* Removing menu till backend functionality can be installed. */}
+                {/* <MenuItem onClick={() => handlePageChange('Contact') && handleCloseNavMenu}>
                   <Typography textAlign="center">Contact</Typography>
-                </MenuItem>
+                </MenuItem> */}
             </Menu>
           </Box>
           
@@ -137,9 +138,10 @@ function ResponsiveAppBar({ currentPage, handlePageChange, handleCloseNavMenu, h
                 <MenuItem onClick={() => handlePageChange('Resume')}>
                   <Typography textAlign="center" className={currentPage === 'Resume' ? 'navHighlight' : ''}>Resume</Typography>
                 </MenuItem>
-                <MenuItem onClick={() => handlePageChange('Contact')}>
+                {/* Removing menu till backend functionality can be installed. */}
+                {/* <MenuItem onClick={() => handlePageChange('Contact')}>
                   <Typography textAlign="center" className={currentPage === 'Contact' ? 'navHighlight' : ''}>Contact</Typography>
-                </MenuItem>
+                </MenuItem> */}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
           </Box>
