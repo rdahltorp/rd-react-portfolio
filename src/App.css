@@ -2,9 +2,34 @@
     font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 h1 {
     color: #545454;
+    text-align: center;
+}
+
+h2 {
+    color: #545454;
     text-decoration: underline;
+    margin-bottom: 2%;
+}
+
+h3 {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.contactLink{
+    color: #4A9666;
+    text-decoration: none;
+}
+
+.contactLink:hover {
+    color: #4A9666;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 button {
@@ -25,13 +50,27 @@ button {
 }
 
 .footer {
-    margin-top: auto;
+    /* margin-top: auto; */
 }
 
 .mainContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* height: 100vh; */
+}
+
+.withBkgdImg {
+    background-image: url(./assets/images/mtnBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.withBkgdColor {
+    background: #F5F1ED;
+    background-size: cover;
 }
 
 .formContainer {
@@ -66,24 +105,51 @@ textarea {
 
 .profileImg {
     width: 200px;
-    border-radius: 30%;
-    margin-top: 3%;
+    border-radius: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 0px 9px #4A9666;
 }
 
 .aboutMeTitle {
     color: #545454;
-    margin: 8px;
+    margin: 6px;
+    align-self: center;
+}
+
+.aboutMeBoxHeading {
+    color: #545454;
+    margin: 3px;
+    margin-top: 2%;
     align-self: center;
 }
 
 .profileDesc {
     width: 75%;
-    border: 1px solid #4A9666;
+    border: 3px solid #4A9666;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.techs {
+    /* background: #3E78B2; */
+}
+
+.techDesc {
+    width: 50%;
+    border: 3px solid #4A9666;
+    background: white;
     margin: 20px;
     border-radius: 10px;
     padding: 0px 10px 0px 10px;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 .resumeImg {
@@ -106,4 +172,14 @@ textarea {
 .navHighlight {
     border: white 1px solid;
     padding: 5px;
+    border-radius: 8%;
+}
+
+.titleBox {
+    margin-top: 2%;
+}
+
+.frontEndTech, .backEndTech {
+    width: 70%;
+    border-bottom: 3px dashed #4A9666;
 }

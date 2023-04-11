@@ -78,40 +78,42 @@ const projects =[
 
 export default function Portfolio() {
   return (
-     <div className='mainContainer'>
-         <h1>Previous Work</h1>
-         <Grid container spacing={2} direction="row" justifyContent="space-evenly" alignItems="center">
-        {projects.map((project) => (
-            <Grid item xs={12} md={5} className="projectCentering">
-                <Card sx={{ width: '40vh', margin: '10px'}}>
-                    <CardMedia 
-                        key={project.name}
-                        sx={{ 
-                            height: 140, 
-                        }}
-                        image={project.image}
-                        title={project.title}
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            {project.name}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Languages Used: {project.langs}
-                        </Typography>
-                    </CardContent>
-                    <CardActions>
-                        <Button size="small" href={project.repoLink} target="_blank" rel="noreferrer">Repo</Button>
-                        {project.liveApp ? (
-                            <Button size="small" href={project.liveApp} target="_blank" rel="noreferrer">Live App</Button>
-                        )
-                        : null
-                        }
-                    </CardActions>
-                </Card>
+    <div className='withBkgdColor'>
+        <div className='mainContainer'>
+            <h1>Previous Work</h1>
+            <Grid container spacing={2} direction="row" justifyContent="space-evenly" alignItems="center">
+            {projects.map((project) => (
+                <Grid item xs={12} md={5} className="projectCentering">
+                    <Card sx={{ width: '40vh', margin: '10px'}}>
+                        <CardMedia 
+                            key={project.name}
+                            sx={{ 
+                                height: 140, 
+                            }}
+                            image={project.image}
+                            title={project.title}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                                {project.name}
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                                Languages Used: {project.langs}
+                            </Typography>
+                        </CardContent>
+                        <CardActions>
+                            <Button size="small" href={project.repoLink} target="_blank" rel="noreferrer">Repo</Button>
+                            {project.liveApp ? (
+                                <Button size="small" href={project.liveApp} target="_blank" rel="noreferrer">Live App</Button>
+                            )
+                            : null
+                            }
+                        </CardActions>
+                    </Card>
+                </Grid>
+            ))}
             </Grid>
-        ))}
-        </Grid>
+        </div>
     </div>
     );
 }
