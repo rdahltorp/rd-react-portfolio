@@ -14,6 +14,7 @@ export default function SimpleBottomNavigation() {
 
   return (
     <div className='footer'>
+      <h3 className='footerTitle'>Get In Touch</h3>
       <Box sx={{ alignItems: 'center', }}>
         <BottomNavigation
           showLabels
@@ -25,7 +26,6 @@ export default function SimpleBottomNavigation() {
           <BottomNavigationAction sx={{color: 'white'}} label="Email" icon={<EmailIcon />} href="mailto:rdahltorp+contact@gmail.com" target="_blank" rel="noreferrer" />
           <BottomNavigationAction sx={{color: 'white'}} label="GitHub" icon={<GitHubIcon />} href="https://github.com/rdahltorp" target="_blank" rel="noreferrer" />
           <BottomNavigationAction sx={{color: 'white'}} label="LinkedIn" icon={<LinkedInIcon />} href="https://www.linkedin.com/in/reeddahltorp/" target="_blank" rel="noreferrer" />
-          <BottomNavigationAction sx={{color: 'white'}} label="Twitter" icon={<TwitterIcon />} href="https://twitter.com/rdahltorp" target="_blank" rel="noreferrer" />
         </BottomNavigation>
       </Box>
     </div>

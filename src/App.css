@@ -69,6 +69,10 @@ button {
     background-size: cover;
 }
 
+.blueBack {
+    background: #3E78B2;
+}
+
 /* Nav Bar */
 .navHighlight {
     border: white 1px solid;
@@ -97,19 +101,36 @@ button {
     cursor: pointer;
 }
 
-.profileImg {
-    width: 200px;
-    border-radius: 100%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0px 0px 0px 9px #4A9666;
-}
+
 
 .profileContent {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 95%;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.profileImg {
+    flex: 1 1 auto;
+    max-width: 200px;
+    border-radius: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 0px 9px #4A9666;
+}
+
+.profileDesc {
+    flex: 2 1 auto;
+    max-width: 75%;
+    border: 3px solid #4A9666;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutMeTitle {
@@ -125,20 +146,11 @@ button {
     align-self: center;
 }
 
-.profileDesc {
-    width: 75%;
-    border: 3px solid #4A9666;
-    background: white;
-    margin: 20px;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-}
+
 
 /* Techs Section */
-.techs {
-    background: #3E78B2;
+.techTitle {
+    color: white;
 }
 
 .techDesc {
@@ -175,7 +187,19 @@ button {
 
 /* Footer Section */
 .footer {
-    /* margin-top: auto; */
+    background: #4A9666;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTitle {
+    align-self: center;
+    text-align: center;
+    color: white;
+    border: 1px white solid;
+    width: 15%;
+    padding: 5px;
+    border-radius: 8%;
 }
 
 /* Forms */

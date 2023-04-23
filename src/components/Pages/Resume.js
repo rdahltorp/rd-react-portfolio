@@ -16,9 +16,9 @@ export default function Contact() {
     }
     
     return (
-        <div className="withBkgdColor">
+        <div className="blueBack">
             <div className="mainContainer">
-                <h1>Resume</h1>
+                <h1 className="techTitle">Resume</h1>
                 
                 <img src={resumeImage} alt="Resume" className="resumeImg" />
 

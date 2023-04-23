@@ -2,9 +2,9 @@ import * as React from 'react';
 
 export default function Techs() {
     return (
-            <div className="mainContainer techs">
+            <div className="mainContainer blueBack">
+                <h1 className='techTitle'>Technologies & Tools</h1>
                 <div className="techDesc">
-                    <h2>Technologies & Tools</h2>
                         <div className="frontEndTech">
                             <h3>Front-End</h3>
                             <p>HTML | CSS | JavaScript | React | jQuery</p>
