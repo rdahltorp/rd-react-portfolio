@@ -58,6 +58,7 @@ export default function PageHandler() {
                 <About />
                 <Techs />
                 <Portfolio />
+                <Resume />
             </main>
             <Footer />
         </div>
