@@ -1,3 +1,4 @@
+/* Global Items */
 * {
     font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
@@ -21,15 +22,22 @@ h3 {
     margin-top: 2%;
     margin-bottom: 1%;
 }
-.contactLink{
-    color: #4A9666;
-    text-decoration: none;
+
+input{
+    width: 175%;
+    margin: 10px;
+    border: 2px solid #4A9666; 
+    border-radius: 10px;
+    padding: 3px 8px;
 }
 
-.contactLink:hover {
-    color: #4A9666;
-    text-decoration: underline;
-    cursor: pointer;
+textarea {
+    width: 175%;
+    margin: 10px;
+    height: 150px;
+    border: 2px solid #4A9666; 
+    border-radius: 10px;
+    padding: 3px 8px;
 }
 
 button {
@@ -49,19 +57,6 @@ button {
     justify-content: flex-start;
 }
 
-.footer {
-    /* margin-top: auto; */
-}
-
-.mainContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    /* height: 100vh; */
-}
-
 /* Backgrounds */
 .withBkgdImg {
     background-image: url(./assets/images/mtnBackground.jpg);
@@ -74,34 +69,32 @@ button {
     background-size: cover;
 }
 
-.formContainer {
+/* Nav Bar */
+.navHighlight {
+    border: white 1px solid;
+    padding: 5px;
+    border-radius: 8%;
+}
+
+/* About Me Section */
+.mainContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* height: 100vh; */
 }
 
-input{
-    width: 175%;
-    margin: 10px;
-    border: 2px solid #4A9666; 
-    border-radius: 10px;
-    padding: 3px 8px;
+.contactLink{
+    color: #4A9666;
+    text-decoration: none;
 }
 
-textarea {
-    width: 175%;
-    margin: 10px;
-    height: 150px;
-    border: 2px solid #4A9666; 
-    border-radius: 10px;
-    padding: 3px 8px;
-}
-
-.errorMsg {
-    color: red;
+.contactLink:hover {
+    color: #4A9666;
     text-decoration: underline;
-    font-size: small;
-    margin-top: 0px;
+    cursor: pointer;
 }
 
 .profileImg {
@@ -110,6 +103,13 @@ textarea {
     margin-top: 2%;
     margin-bottom: 2%;
     box-shadow: 0px 0px 0px 9px #4A9666;
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
 }
 
 .aboutMeTitle {
@@ -136,6 +136,7 @@ textarea {
     flex-direction: column;
 }
 
+/* Techs Section */
 .techs {
     background: #3E78B2;
 }
@@ -153,6 +154,18 @@ textarea {
     align-items: center;
 }
 
+.frontEndTech, .backEndTech {
+    width: 70%;
+    border-bottom: 3px dashed #4A9666;
+}
+
+/* Protfolio Section */
+.projectCentering {
+    display: flex;
+    justify-content: center;
+}
+
+/* Resume Section */
 .resumeImg {
     width: 600px;
     border: solid #545454 1px;
@@ -160,27 +173,25 @@ textarea {
     box-shadow: 10px 5px 15px #5454;
 }
 
-.projectCentering {
+/* Footer Section */
+.footer {
+    /* margin-top: auto; */
+}
+
+/* Forms */
+.formContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.techBlogImg {
-    background-image: url("./assets/images/projectImgs/techblog-screenshot.png");
-    background-size: cover;
+.errorMsg {
+    color: red;
+    text-decoration: underline;
+    font-size: small;
+    margin-top: 0px;
 }
 
-.navHighlight {
-    border: white 1px solid;
-    padding: 5px;
-    border-radius: 8%;
-}
-
-.titleBox {
+/* .titleBox {
     margin-top: 2%;
-}
-
-.frontEndTech, .backEndTech {
-    width: 70%;
-    border-bottom: 3px dashed #4A9666;
-}
+} */
