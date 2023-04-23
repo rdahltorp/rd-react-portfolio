@@ -4,7 +4,8 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Portfolio from "./Pages/Portfolio";
 import Resume from "./Pages/Resume";
-import Footer from "./Footer/footer"
+import Footer from "./Footer/footer";
+import Techs from "./Pages/Techs";
 
 export default function PageHandler() {
     
@@ -41,11 +42,22 @@ export default function PageHandler() {
         handleCloseNavMenu()
     }
     
+    // return (
+    //     <div className="flexWrapper">
+    //         <Navigation currentPage={currentPage} handlePageChange={handlePageChange} handleCloseNavMenu={handleCloseNavMenu} handleOpenNavMenu={handleOpenNavMenu} anchorElNav={anchorElNav} />
+    //         <main>
+    //             {renderPage()}
+    //         </main>
+    //         <Footer />
+    //     </div>
+    // )
     return (
         <div className="flexWrapper">
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange} handleCloseNavMenu={handleCloseNavMenu} handleOpenNavMenu={handleOpenNavMenu} anchorElNav={anchorElNav} />
             <main>
-                {renderPage()}
+                <About />
+                <Techs />
+                <Portfolio />
             </main>
             <Footer />
         </div>

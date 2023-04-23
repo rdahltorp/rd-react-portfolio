@@ -31,3 +31,23 @@ export default function SimpleBottomNavigation() {
     </div>
   );
 }
+
+
+//New footer design
+// export default function SimpleBottomNavigation() {
+//   const [value, setValue] = React.useState(0);
+
+//   return (
+//     <footer className='footer'>
+//       <div className='footer_container'>
+//         <div className='footer_top'>
+//           <div>
+//             <h6 className='footer_title'>Contact</h6>
+
+//           </div>
+//         </div>
+
+//       </div>
+//     </footer>
+//   );
+// }

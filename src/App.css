@@ -62,6 +62,7 @@ button {
     /* height: 100vh; */
 }
 
+/* Backgrounds */
 .withBkgdImg {
     background-image: url(./assets/images/mtnBackground.jpg);
     background-size: cover;
@@ -136,7 +137,7 @@ textarea {
 }
 
 .techs {
-    /* background: #3E78B2; */
+    background: #3E78B2;
 }
 
 .techDesc {
